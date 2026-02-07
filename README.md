@@ -15,7 +15,7 @@ description: Bhagavad-Gita-API is an open-source lightweight Node.js-based REST 
 
 **api-method**: get 
 
-**url**: https://vedicscriptures.github.io/slok/:ch/:sl
+**url**: https://arpit-patel1.github.io/bhagavadgita.github.io/slok/:ch/:sl
 
 **description**: Retrieve specific slok and chapter from Shreemad Bhagavad Gita.
 
@@ -34,7 +34,7 @@ description: Bhagavad-Gita-API is an open-source lightweight Node.js-based REST 
 ### Example (JSON Fetch)
 
 ```js
-fetch('https://vedicscriptures.github.io/slok/1/1')
+fetch('https://arpit-patel1.github.io/bhagavadgita.github.io/slok/1/1')
   .then(response => response.json())
   .then(data => console.log(data));
 ```
@@ -145,14 +145,14 @@ fetch('https://vedicscriptures.github.io/slok/1/1')
 
 **api-method**: get 
 
-**url**: https://vedicscriptures.github.io/chapters
+**url**: https://arpit-patel1.github.io/bhagavadgita.github.io/chapters
 
 **description**: Retrieve details of all chapters in Shreemad Bhagavad Gita.
 
 ### Example (JSON Fetch)
 
 ```js
-fetch('https://vedicscriptures.github.io/chapters')
+fetch('https://arpit-patel1.github.io/bhagavadgita.github.io/chapters')
   .then(response => response.json())
   .then(data => console.log(data));
 ```
@@ -188,7 +188,7 @@ fetch('https://vedicscriptures.github.io/chapters')
 
 **api-method**: get 
 
-**url**: https://vedicscriptures.github.io/chapter/:ch
+**url**: https://arpit-patel1.github.io/bhagavadgita.github.io/chapter/:ch
 
 **description**: Retrieve details of a specific chapter in Shreemad Bhagavad Gita.
 
@@ -202,7 +202,7 @@ fetch('https://vedicscriptures.github.io/chapters')
 ### Example (JSON Fetch)
 
 ```js
-fetch('https://vedicscriptures.github.io/chapter/1')
+fetch('https://arpit-patel1.github.io/bhagavadgita.github.io/chapter/1')
   .then(response => response.json())
   .then(data => console.log(data));
 ```

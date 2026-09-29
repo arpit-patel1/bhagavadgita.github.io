@@ -8,8 +8,9 @@ description: Bhagavad-Gita-API is an open-source lightweight Node.js-based REST 
 ## 🚀 API Reference
 
 1. GET [/slok/:ch/:sl](#get-slokchsl)
-2. GET [/chapters](#get-chapters)
-3. GET [/chapter/:ch](#get-chapterch)
+2. GET [/slok-lite/:ch/:sl](#get-slok-litechsl)
+3. GET [/chapters](#get-chapters)
+4. GET [/chapter/:ch](#get-chapterch)
 
 ## GET /slok/:ch/:sl
 
@@ -138,6 +139,33 @@ fetch('https://arpit-patel1.github.io/bhagavadgita.github.io/slok/1/1')
     "author": "Sri Neelkanth",
     "sc": "।।1.1।।तत्र युद्धोद्यमं श्रुत्वौत्सुक्यादग्रिमं वृत्तान्तं बुभुत्सुर्धृतराष्ट्र उवाच   धर्मक्षेत्र इति। तत्र वेदेतेषां कुरुक्षेत्रं देवयजनमास इति कर्मकाण्डप्रसिद्धं कुरुक्षेत्रमन्यत्अविमुक्तं वै कुरुक्षेत्रं देवानां देवयजनं सर्वेषां भूतानां ब्रह्मसदनम् इत्यविमुक्ताख्यं ब्रह्मप्राप्तिस्थानभूतं कुरुक्षेत्रमन्यत्। ब्रह्मसदनत्वं चास्य  अत्र हि जन्तोः प्राणेषूत्क्रममाणेषु रुद्रस्तारकं ब्रह्म व्याचष्टे येनासावमृतीभूत्वा मोक्षी भवतीति वाक्यशेषेण व्युत्पादितम्। एतद्व्यावृत्त्यर्थं धर्मक्षेत्रे इति विशेषणम्। कुरुदेशान्तर्गतं हि कुरुक्षेत्रं धर्मक्षेत्रमेव नतु तद्ब्रह्मसदनम्। प्रवर्ग्यकाण्डे तस्य धर्मक्षेत्रत्वमात्रश्रवणात्। तत्र समवेता मिलिताः युयुत्सवो योद्धुमिच्छवः। पाण्डवानां पृथग्ग्रहणं तेषु ममत्वाभावसूचनार्थम्।"
   }
+}
+```
+
+## GET /slok-lite/:ch/:sl
+
+**api-method**: get
+
+**url**: https://arpit-patel1.github.io/bhagavadgita.github.io/slok-lite/:ch/:sl
+
+**description**: Slim verse payload — Sanskrit text and transliteration only (no commentaries). Same path params as `/slok/:ch/:sl`.
+
+### Example (JSON Fetch)
+
+```js
+fetch('https://arpit-patel1.github.io/bhagavadgita.github.io/slok-lite/5/18')
+  .then(response => response.json())
+  .then(data => console.log(data));
+```
+
+### Output
+
+```json
+{
+  "chapter": 5,
+  "verse": 18,
+  "slok": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि |\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः ||५-१८||",
+  "transliteration": "vidyāvinayasampanne brāhmaṇe gavi hastini .\nśuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ ||5-18||"
 }
 ```
 

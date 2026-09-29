@@ -148,7 +148,7 @@ fetch('https://arpit-patel1.github.io/bhagavadgita.github.io/slok/1/1')
 
 **url**: https://arpit-patel1.github.io/bhagavadgita.github.io/slok-lite/:ch/:sl
 
-**description**: Slim verse payload — Sanskrit text and transliteration only (no commentaries). Same path params as `/slok/:ch/:sl`.
+**description**: Slim verse payload — Sanskrit text, transliteration, and a short English meaning (no full commentaries). Same path params as `/slok/:ch/:sl`. The `explanation` field is Shri Purohit Swami’s English translation (`et`), with A.C. Bhaktivedanta Swami Prabhupada as fallback when Purohit is unavailable. Chapter colophons may have an empty `explanation`.
 
 ### Example (JSON Fetch)
 
@@ -165,7 +165,8 @@ fetch('https://arpit-patel1.github.io/bhagavadgita.github.io/slok-lite/5/18')
   "chapter": 5,
   "verse": 18,
   "slok": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि |\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः ||५-१८||",
-  "transliteration": "vidyāvinayasampanne brāhmaṇe gavi hastini .\nśuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ ||5-18||"
+  "transliteration": "vidyāvinayasampanne brāhmaṇe gavi hastini .\nśuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ ||5-18||",
+  "explanation": "Sages look equally upon all, whether he be a minister of learning and humility, or an infidel, or whether it be a cow, an elephant or a dog."
 }
 ```
 
